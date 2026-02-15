@@ -14,3 +14,5 @@ class Resistor():
         node.connect_to_node(self)
     def get_other_node(self,node):
         return self.node2 if self.node1 == node else self.node1
+    def is_connected(self, node1):
+        return self.node1 == node1 or self.node2 == node1

@@ -1,6 +1,5 @@
 from .network import Network
 from .node import Node
-from .resistor import Resistor
 from ..util.edge_finder import find_edges
 
 def find_parallels(network:Network):

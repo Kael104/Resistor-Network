@@ -2,7 +2,8 @@ from src.lib import Network,Resistor,Node
 from src.lib.finder import find_series,find_parallels
 from src.lib.combine import combine_all_serieses,combine_all_parallels
 from src.lib.update_network import network_updater
-
+from src.lib.visualizer import visualize_graph
+from src.lib.solver import node_resistance
 net = Network()
 
 a = Node('A')
@@ -37,8 +38,4 @@ net.set_ground(d)
 net.set_ground(a)
 net.set_ground(e)
 
-combine_all_serieses(net,find_series(net))
-combine_all_parallels(net,find_parallels(net))
-network_updater(net)
-
-net.print_resistors()
+node_resistance(net)

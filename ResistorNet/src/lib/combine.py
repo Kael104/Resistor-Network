@@ -1,5 +1,4 @@
 from .network import Network
-from .node import Node
 from .resistor import Resistor
 
 def combine_all_parallels(network:Network,parallels):

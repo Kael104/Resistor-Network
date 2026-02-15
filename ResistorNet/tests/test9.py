@@ -39,6 +39,4 @@ net.set_ground(d)
 net.set_ground(a)
 net.set_ground(e)
 
-visualize_graph(net)
-print(node_resistance(net,b))
-visualize_graph(net)
+print(node_resistance(net))

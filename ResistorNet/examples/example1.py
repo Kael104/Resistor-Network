@@ -35,11 +35,4 @@ net.set_ground(f)
 net.set_ground(a)
 net.set_ground(e)
 
-# Visualize initial network
-# visualize_graph(net)
-
-# Compute equivalent resistance from node A
-print("Equivalent resistance at node A:", node_resistance(net, b))
-
-# Visualize simplified network after solver
-# visualize_graph(net)
+print("Equivalent resistance at node A:", node_resistance(net))
